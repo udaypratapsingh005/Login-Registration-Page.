@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration page</title>
+    <link rel="stylesheet" href="./Login_Registration_page.css">
+</head>
+<body>
+
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation-bar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Service</a>
+            <button class="login-btn">Login</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <div class="icon-closed"><ion-icon name="close"></ion-icon></div>
+
+        <div id="login" class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <Label>Email</Label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon> </span>
+                    <input type="password" required>
+                    <Label>Password</Label>
+                </div>
+                <div class="remember-forget">
+                    <label> <input type="checkbox"> Remember me </label>
+                    <a href="#"> Forget Password </a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+
+                <div class="login-registration">
+                    <p>Don't have an account ?<a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+         <div id="register" class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-circle"></ion-icon></span>
+                    <input type="text" required>
+                    <Label>Username</Label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <Label>Email</Label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon> </span>
+                    <input type="password" required>
+                    <Label>Password</Label>
+                </div>
+                <div class="remember-forget">
+                    <label> <input type="checkbox"> Agree to the term & Conditions </label>
+                </div>
+                <button type="button" class="btn">Register</button>
+
+                <div class="login-registration">
+                    <p>Already have an account ? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./Login_Registration_page.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
